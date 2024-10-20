@@ -1,10 +1,11 @@
-mport React from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Login from "./Login";
-import SignUp from "./SignUp";  // Import SignUp component
+import Home from "./Home.js";
+import SignInSignUp from "./SignUpSIgnIn.js";
 import './App.css';
+{/*import About from "./About";
+import Login from "./Login";*/}
+
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} /> 
+         <Route path="/" element={<Home />} />
+          {/*<route path="/about" element={<about />} />
+          <route path="/login" element={<login />} /> */}
+         <Route path="/signup" element={<SignInSignUp />} />
+
         </Routes>
       </div>
     </Router>
