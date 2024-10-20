@@ -1,12 +1,12 @@
 import React from "react";
-import ReferralSystem from "./ReferralSystem";
+{/*import ReferralSystem from "./ReferralSystem";*/}
 
-function Home() {
+const Home=() =>{
   return (
     <div>
       <h1>Welcome to Our Platform</h1>
       <p>This is the homepage where you can explore our services.</p>
-      <ReferralSystem />
+      {/*<ReferralSystem />*/}
     </div>
   );
 }
